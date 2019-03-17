@@ -9,6 +9,7 @@
   "author": "Bhumesh Domala",
   "license": "ISC",
   "dependencies": {
+    "auto-format": "^1.1.1",
     "jsdom": "^14.0.0",
     "node-fetch": "^2.3.0",
     "prettier": "^1.16.4"
