@@ -1,11 +1,11 @@
-problemsAndSolutions = [];
-count = 0;
+const problemsAndSolutions = [];
+let count = 0;
 
-sections = Array.from(document.querySelectorAll("a"))
+const sections = Array.from(document.querySelectorAll("a"))
 	.map(a => (a.href.includes("/java/") ? a.href : null))
 	.filter(Boolean);
 
-extractProblems = url =>
+const extractProblems = url =>
 	new Promise(async (res, rej) => {
 		const fetchedHTML = await fetchHTML(url);
 		div = document.createElement("div");
@@ -21,7 +21,7 @@ extractProblems = url =>
 		res(section);
 	});
 
-extractProblemData = url =>
+const extractProblemData = url =>
 	new Promise(async (res, rej) => {
 		const fetchedHTML = await fetchHTML(url);
 		div = document.createElement("div");
@@ -38,13 +38,13 @@ extractProblemData = url =>
 		});
 	});
 
-fetchHTML = async url => {
+const fetchHTML = async url => {
 	const rawData = await fetch(url);
 	const HTMLText = await rawData.text();
 	return HTMLText;
 };
 
-exportDataToFile = () => {
+const exportDataToFile = () => {
 	dlAnchorElem = document.createElement("a");
 	dataStr =
 		"data:text/json;charset=utf-8," +
@@ -54,11 +54,13 @@ exportDataToFile = () => {
 	dlAnchorElem.click();
 };
 
-promises = sections.map(section => extractProblems(section));
+const promises = sections.map(section => extractProblems(section));
 
 Promise.all(promises).then(data => {
 	data.map((a, id) => {
-		problemPromises = a.problems.map(section => extractProblemData(section));
+		let problemPromises = a.problems.map(section =>
+			extractProblemData(section)
+		);
 		Promise.all(problemPromises).then(problems => {
 			problemsAndSolutions.push({
 				sectionTitle: a.title,
