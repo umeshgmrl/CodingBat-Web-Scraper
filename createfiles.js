@@ -1,18 +1,16 @@
 const fs = require("fs");
-let obj = JSON.parse(fs.readFileSync("scene.json", "utf8"));
-
-obj = [obj[0]];
+let obj = JSON.parse(fs.readFileSync("dump.json", "utf8"));
 
 obj.map(o => {
-	let folderName = o.title;
+	let folderName = o.sectionTitle;
 	console.log(folderName);
 	fs.mkdirSync(folderName);
 	o.problems.map(p => {
-		let text = `/*${p.description}*/
+		let text = `/*${p.problemDescription}*/
 
-		${p.solution}
+		${p.problemSolution}
 		`;
-		fs.writeFile(`${folderName}/${p.title}.java`, text, function(err) {
+		fs.writeFile(`${folderName}/${p.problemTitle}.java`, text, function(err) {
 			if (err) {
 				return console.log(err);
 			}
