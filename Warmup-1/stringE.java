@@ -1,6 +1,7 @@
-/*Return true if the given string contains between 1 and 3 'e' chars.stringE("Hello") → truestringE("Heelle") → truestringE("Heelele") → false*/
+/*Return true if the given string contains between 1 and 3 'e' chars.stringE("Hello") → true
+stringE("Heelle") → truestringE("Heelele") → false*/
 
-		public boolean stringE(String str) {
+public boolean stringE(String str) {
   
   if(str.length()<1) return false;
   int a= str.length();
@@ -13,5 +14,3 @@
   }
   return false;
 }
-
-		

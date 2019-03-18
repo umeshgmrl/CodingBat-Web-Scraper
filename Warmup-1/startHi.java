@@ -1,6 +1,7 @@
-/*Given a string, return true if the string starts with "hi" and false otherwise.startHi("hi there") → truestartHi("hi") → truestartHi("hello hi") → false*/
+/*Given a string, return true if the string starts with "hi" and false otherwise.startHi("hi
+ there") → truestartHi("hi") → truestartHi("hello hi") → false*/
 
-		public boolean startHi(String str) {
+public boolean startHi(String str) {
   if(str.length()<2) return false;
   else
   {
@@ -9,5 +10,3 @@
   else return false;
   }
 }
-
-		

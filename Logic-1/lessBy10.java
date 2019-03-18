@@ -1,6 +1,7 @@
-/*Given three ints, a b c, return true if one of them is 10 or more less than one of the others.lessBy10(1, 7, 11) → truelessBy10(1, 7, 10) → falselessBy10(11, 1, 7) → true*/
+/*Given three ints, a b c, return true if one of them is 10 or more less than one of the oth
+ers.lessBy10(1, 7, 11) → truelessBy10(1, 7, 10) → falselessBy10(11, 1, 7) → true*/
 
-		public boolean lessBy10(int a, int b, int c) {
+public boolean lessBy10(int a, int b, int c) {
  // int x= Math.abs(a-b);
   //int y= Math.abs(b-c);
   //int z= Math.abs(c-a);
@@ -12,5 +13,3 @@
   return false;
   
 }
-
-		

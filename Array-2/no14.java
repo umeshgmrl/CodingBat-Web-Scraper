@@ -1,6 +1,7 @@
-/*Given an array of ints, return true if it contains no 1's or it contains no 4's.no14([1, 2, 3]) → trueno14([1, 2, 3, 4]) → falseno14([2, 3, 4]) → true*/
+/*Given an array of ints, return true if it contains no 1's or it contains no 4's.no14([1, 2
+, 3]) → trueno14([1, 2, 3, 4]) → falseno14([2, 3, 4]) → true*/
 
-		public boolean no14(int[] nums) {
+public boolean no14(int[] nums) {
 	boolean onePresent = false;
 	boolean fourPresent = false;
   for (int i=0; i<nums.length; i++) {
@@ -9,4 +10,3 @@
   }
   return !(onePresent && fourPresent);
 }
-		

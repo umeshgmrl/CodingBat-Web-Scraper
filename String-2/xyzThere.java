@@ -1,6 +1,8 @@
-/*Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.xyzThere("abcxyz") → truexyzThere("abc.xyz") → falsexyzThere("xyz.abc") → true*/
+/*Return true if the given string contains an appearance of "xyz" where the xyz is not direc
+tly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.xyzThere("abcxyz") → 
+truexyzThere("abc.xyz") → falsexyzThere("xyz.abc") → true*/
 
-		public boolean xyzThere(String str) {
+public boolean xyzThere(String str) {
     if(str.length() >= 3 && str.substring(0, 3).equals("xyz"))
         return true;
           
@@ -11,4 +13,3 @@
                           
     return false;
 }
-		

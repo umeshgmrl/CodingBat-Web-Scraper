@@ -1,6 +1,9 @@
-/*Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.repeatEnd("Hello", 3) → "llollollo"repeatEnd("Hello", 2) → "lolo"repeatEnd("Hello", 1) → "o"*/
+/*Given a string and an int n, return a string made of n repetitions of the last n character
+s of the string. You may assume that n is between 0 and the length of the string, inclusiv
+e.repeatEnd("Hello", 3) → "llollollo"repeatEnd("Hello", 2) → "lolo"repeatEnd("Hello", 1) →
+ "o"*/
 
-		public String repeatEnd(String str, int n) {
+public String repeatEnd(String str, int n) {
   str= str.substring(str.length()-n);
   String temp= str;
   for(int i=0; i<n-1; i++){
@@ -8,5 +11,3 @@
   }
   return str;
 }
-
-		

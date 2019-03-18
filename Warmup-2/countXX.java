@@ -1,6 +1,7 @@
-/*Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".countXX("abcxx") → 1countXX("xxx") → 2countXX("xxxx") → 3*/
+/*Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "x
+xx" contains 2 "xx".countXX("abcxx") → 1countXX("xxx") → 2countXX("xxxx") → 3*/
 
-		int countXX(String str) {
+int countXX(String str) {
   
   int count=0;
   
@@ -13,5 +14,3 @@
   }
   return count;
 }
-
-		

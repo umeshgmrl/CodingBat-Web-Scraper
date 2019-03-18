@@ -1,6 +1,7 @@
-/*Given an array of ints, return true if every 2 that appears in the array is next to another 2.twoTwo([4, 2, 2, 3]) → truetwoTwo([2, 2, 4]) → truetwoTwo([2, 2, 4, 2]) → false*/
+/*Given an array of ints, return true if every 2 that appears in the array is next to anothe
+r 2.twoTwo([4, 2, 2, 3]) → truetwoTwo([2, 2, 4]) → truetwoTwo([2, 2, 4, 2]) → false*/
 
-		public boolean twoTwo(int[] nums) {
+public boolean twoTwo(int[] nums) {
   if(nums.length == 1 && nums[0] == 2){
   	return false;
   }
@@ -19,4 +20,3 @@
 	}
 	return true;
 }
-		

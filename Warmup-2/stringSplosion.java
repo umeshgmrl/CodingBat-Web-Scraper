@@ -1,6 +1,7 @@
-/*Given a non-empty string like "Code" return a string like "CCoCodCode".stringSplosion("Code") → "CCoCodCode"stringSplosion("abc") → "aababc"stringSplosion("ab") → "aab"*/
+/*Given a non-empty string like "Code" return a string like "CCoCodCode".stringSplosion("Cod
+e") → "CCoCodCode"stringSplosion("abc") → "aababc"stringSplosion("ab") → "aab"*/
 
-		public String stringSplosion(String str) {
+public String stringSplosion(String str) {
   
   int n= str.length();
   String s="";
@@ -12,5 +13,3 @@
   }
   return s;
 }
-
-		

@@ -1,6 +1,8 @@
-/*Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.countCode("aaacodebbb") → 1countCode("codexxcode") → 2countCode("cozexxcope") → 2*/
+/*Return the number of times that the string "code" appears anywhere in the given string, ex
+cept we'll accept any letter for the 'd', so "cope" and "cooe" count.countCode("aaacodebbb
+") → 1countCode("codexxcode") → 2countCode("cozexxcope") → 2*/
 
-		public int countCode(String str) {
+public int countCode(String str) {
   int count= 0;
   for(int i=0;i<str.length()-3;i++)
   {
@@ -11,5 +13,3 @@
   }
   return count;
 }
-
-		

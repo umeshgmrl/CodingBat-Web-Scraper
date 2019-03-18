@@ -1,6 +1,8 @@
-/*Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.either24([1, 2, 2]) → trueeither24([4, 4, 1]) → trueeither24([4, 4, 1, 2, 2]) → false*/
+/*Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a
+ 4, but not both.either24([1, 2, 2]) → trueeither24([4, 4, 1]) → trueeither24([4, 4, 1, 2,
+ 2]) → false*/
 
-		public boolean either24(int[] nums) {
+public boolean either24(int[] nums) {
 	if(nums.length < 2) return false;
 	boolean twosPair = false;
 	boolean foursPair = false;
@@ -12,5 +14,3 @@
   if(twosPair != foursPair) return true;
   return false;
 }
-
-		

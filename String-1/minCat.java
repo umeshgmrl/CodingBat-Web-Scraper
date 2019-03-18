@@ -1,6 +1,10 @@
-/*Given two strings, append them together (known as "concatenation") and return the result. However, if the strings are different lengths, omit chars from the longer string so it is the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may be any length.minCat("Hello", "Hi") → "loHi"minCat("Hello", "java") → "ellojava"minCat("java", "Hello") → "javaello"*/
+/*Given two strings, append them together (known as "concatenation") and return the result. 
+However, if the strings are different lengths, omit chars from the longer string so it is 
+the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may b
+e any length.minCat("Hello", "Hi") → "loHi"minCat("Hello", "java") → "ellojava"minCat("jav
+a", "Hello") → "javaello"*/
 
-		public String minCat(String a, String b) {
+public String minCat(String a, String b) {
   int al= a.length();
   int bl= b.length();
   
@@ -17,5 +21,3 @@
   return "";
   
 }
-
-		

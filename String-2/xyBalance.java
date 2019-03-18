@@ -1,6 +1,9 @@
-/*We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.xyBalance("aaxbby") → truexyBalance("aaxbb") → falsexyBalance("yaaxbb") → false*/
+/*We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exist
+s a 'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. One 'y
+' can balance multiple 'x's. Return true if the given string is xy-balanced.xyBalance("aax
+bby") → truexyBalance("aaxbb") → falsexyBalance("yaaxbb") → false*/
 
-		public boolean xyBalance(String str) {
+public boolean xyBalance(String str) {
   if(str.length()>1){
     int k=0;
     for(int i=0; i<str.length(); i++){
@@ -16,5 +19,3 @@
   }
   return !str.equals("x");
 }
-
-		
